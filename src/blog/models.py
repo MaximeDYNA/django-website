@@ -21,6 +21,12 @@ class BlogPost(models.Model):
     content = models.TextField()
     description = models.TextField()
 
+    class Meta:
+        verbose_name = "Article"
+
+    def __str__(self):
+        return self.title
+
 
   #@property
    # def publish_string(self):
